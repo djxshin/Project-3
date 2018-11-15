@@ -10,7 +10,7 @@ const User = new Schema({
     playlist: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'playlistName'
+            ref: 'Playlist'
         }
     ]
 })
