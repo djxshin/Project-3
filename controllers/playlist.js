@@ -1,14 +1,14 @@
-// const User = require('../models/User')
-// const Playlist = require('../models/Playlist')
+const User = require('../models/User')
+const Playlist = require('../models/Playlist')
 
-// const playlistController = {
-//   index: (req, res) => {
-//     let userId = req.params.userId
-//     User.findById(userId).populate('playlist')
-//       .then((user) => {
-//         res.send(user.playlist)
-//       })
-//   },
+const playlistController = {
+  index: (req, res) => {
+    let userId = req.params.userId
+    User.findById(userId).populate('playlist')
+      .then((user) => {
+        res.send(user.playlist)
+      })
+  },
 //   show: (req, res) => {
 //     let playlistId = req.params.playlistId
 //     Playlist.findById(playlistId)
@@ -46,6 +46,6 @@
 //       })
 //   }
 
-// }
+}
 
-// module.exports = playlistController
+module.exports = playlistController
