@@ -8,7 +8,7 @@ const playlistController = {
       .then((user) => {
         res.send(user.playlist)
       })
-  },
+  }
 //   show: (req, res) => {
 //     let playlistId = req.params.playlistId
 //     Playlist.findById(playlistId)
