@@ -10,9 +10,10 @@ router.patch('/api/user/:userId', userController.update)
 router.delete('/api/user/:userId', userController.delete)
 
 router.get('/api/user/:userId/playlist', playlistController.index)
-// router.get('/api/playlist/:playlistId', playlistController.show)
-// router.delete('/api/playlist/:playlistId', playlistController.delete)
-// router.patch('/api/playlist/:playlistId', playlistController.update)
-// router.post('/api/users/:userId/playlist', playlistController.create)
+router.post('/api/user/:userId/playlist', playlistController.create)
+router.get('/api/playlist/:playlistId', playlistController.show)
+router.delete('/api/playlist/:playlistId', playlistController.delete)
+router.patch('/api/playlist/:playlistId', playlistController.update)
+
 
 module.exports = router
