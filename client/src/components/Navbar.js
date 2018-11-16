@@ -26,7 +26,7 @@ class NavBar extends Component {
     return (
       <NavBarStyles id="nav-container" className="some-class">
         <Link to="/">Home</Link>
-        <Link to="/api/user">USERS</Link>
+        <Link to="/user">USERS</Link>
         
       </NavBarStyles>
     );

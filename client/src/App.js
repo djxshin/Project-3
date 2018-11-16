@@ -25,9 +25,9 @@ class App extends Component {
         <Global />
           <NavBar />
           <Switch>
-            <Route exact path="/" component={Homepage}/>
-            <Route path="/api/user/" component={User}/>
-            <Route path="/user/:userId" component={Playlist}/>
+            <Route exact path="/user" component={User}/>
+            <Route exact path="/user/:userId" component={Playlist}/>
+            <Route  path="/" component={Homepage}/>
           </Switch>
         </div>
       </Router>

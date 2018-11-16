@@ -49,16 +49,7 @@ class User extends Component {
   render() {
     return (
       <div>
-        <h3>USERS</h3>
-        {this.state.users.map(user => (
-          <div key={user._id}>
-            <Link to={`/user/${user._id}`}>
-              {user.username} <br />
-              <img src={user.image} alt="" />
-            </Link>
-          </div>
-        ))}
-
+        
         <h3>Create a New User</h3>
         <form onSubmit={this.handleSubmit}>
           <div>
