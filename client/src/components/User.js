@@ -65,12 +65,24 @@ class User extends Component {
                 <h3>Create a New User</h3>
                 <form onSubmit={this.handleSubmit}>
                 <div>
-                <label htmlFor="name">User Name: </label>
+                <label htmlFor="name">Username: </label>
                 <input onChange={this.handleChange} value={this.state.newUser.username} type="text" name="username"/>
                 </div>
                 <div>
-                <label htmlFor="description">User Image: </label>
+                <label htmlFor="image">User Image: </label>
                 <input onChange={this.handleChange} value={this.state.newUser.image} type="text" name="image"/>
+                </div>
+                <div>
+                <label htmlFor="instagram">Instagram: </label>
+                <input onChange={this.handleChange} value={this.state.newUser.instagram} type="text" name="instagram"/>
+                </div>
+                <div>
+                <label htmlFor="mainStreamingService">Main Streaming Service: </label>
+                <input onChange={this.handleChange} value={this.state.newUser.mainStreamingService} type="text" name="mainStreamingService"/>
+                </div>
+                <div>
+                <label htmlFor="streamingUsername">Streaming Service Username: </label>
+                <input onChange={this.handleChange} value={this.state.newUser.streamingUsername} type="text" name="streamingUsername"/>
                 </div>
                 <button type="submit">Submit</button>
                 </form>
