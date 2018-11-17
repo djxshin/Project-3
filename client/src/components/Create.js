@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-class User extends Component {
+class Create extends Component {
   state = {
     users: [],
     newUser: {
@@ -103,9 +103,10 @@ class User extends Component {
           </div>
           <button type="submit">Submit</button>
         </form>
+       
       </div>
     );
   }
 }
 
-export default User;
+export default Create;

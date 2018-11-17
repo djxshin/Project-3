@@ -5,6 +5,7 @@ import Playlist from './components/Playlist'
 import NavBar from './components/Navbar';
 import { createGlobalStyle } from 'styled-components'
 import Homepage from './components/Homepage';
+import Create from './components/Create';
 
 
 const Global = createGlobalStyle`
@@ -26,7 +27,9 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route exact path="/user" component={User}/>
+            <Route exact path="/user/create" component={Create}/>
             <Route exact path="/user/:userId" component={Playlist}/>
+          
             <Route  path="/" component={Homepage}/>
           </Switch>
         </div>
