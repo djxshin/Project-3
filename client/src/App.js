@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import User from './components/User'
-import Playlist from './components/Playlist'
+import UserInfo from './components/UserInfo'
 import NavBar from './components/Navbar';
 import { createGlobalStyle } from 'styled-components'
 import Homepage from './components/Homepage';
@@ -28,7 +28,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/user" component={User}/>
             <Route exact path="/user/create" component={Create}/>
-            <Route exact path="/user/:userId" component={Playlist}/>
+            <Route exact path="/user/:userId" component={UserInfo}/>
           
             <Route  path="/" component={Homepage}/>
           </Switch>
