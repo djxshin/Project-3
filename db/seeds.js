@@ -7,8 +7,8 @@ const KevinPL = new Playlist({
     image: 'https://www.gainesville.org/images/logo-small-001.png',
     track1: "Numb, by Linkin-Park",
     track2: "Notorius Thugs by Bone-Thugs",
-    track3: "Sotfresh, So Clean by Outkast",
-    track4: "Ittwas a Good Day by Ice Cube",
+    track3: "Sofresh, So Clean by Outkast",
+    track4: "It was a Good Day by Ice Cube",
     track5: "Amtitionz Az a Ridah by Tupac "
 })
 
@@ -18,13 +18,13 @@ const DJPL = new Playlist({
     track1: "Prototype, by Andre3000",
     track2: "Jukebox Joints, by ASAP Rocky",
     track3: "Motion, by Khalid",
-    track4: "Summertime Magic, Childish Gambino ",
+    track4: "Summertime Magic, by Childish Gambino ",
     track5: "Only You, by Theophilus London"
 })
 
 const DJ = new User({
     username: 'holdMyDrink',
-    image: 'https://hips.hearstapps.com/esq.h-cdn.co/assets/17/03/1484751145-chappelle-rick-james.jpg?resize=480:*',
+    image: 'https://media.licdn.com/dms/image/C4E03AQEOj8fvzYqeuA/profile-displayphoto-shrink_200_200/0?e=1548288000&v=beta&t=omobsQWJVvAHiakrVq_CiOaKp2wu6Rler3Jlo-idnEk',
     instagram: 'soonDoobooKilla',
     mainStreamingService: 'Apple',
     streamingUsername: 'DJ Shin',
@@ -33,7 +33,7 @@ const DJ = new User({
 
 const Kevin = new User({
     username: 'youngLilKev',
-    image: 'https://target.scene7.com/is/image/Target/GUEST_136af684-35c0-4dcf-948e-adfdf33031cf?wid=488&hei=488&fmt=pjpeg',
+    image: 'https://media.licdn.com/dms/image/C4E03AQHltlZzv7xEYg/profile-displayphoto-shrink_800_800/0?e=1548288000&v=beta&t=XaemGq5pV4RL52EH9FVKKqSTy59WxPHVbDMiAYT3-24',
     instagram: 'ninjaScare',
     mainStreamingService: 'Spotify',
     streamingUsername: 'kevin.rosales',

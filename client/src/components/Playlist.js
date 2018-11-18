@@ -141,6 +141,7 @@ class Playlist extends Component {
             return (
                 <div>
                <h3> <img src={playlist.image} alt=""/></h3>
+               <h3>Playlist: {playlist.playlistName} </h3>
                <h4> favorite track1:  {playlist.track1}</h4>
                <h4> favorite track2: {playlist.track2}</h4>
                <h4> favorite track3: {playlist.track3}</h4>
