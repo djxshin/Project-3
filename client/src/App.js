@@ -26,6 +26,7 @@ class App extends Component {
         <div>
         <Global />
           <NavBar />
+          
           <Switch>
             <Route exact path="/user" component={User}/>
             <Route exact path="/user/create" component={Create}/>
