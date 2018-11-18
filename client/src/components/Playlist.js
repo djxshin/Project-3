@@ -78,9 +78,9 @@ class Playlist extends Component {
         track4: 'Playlist track4',
         track5: 'Playlist track5'
     }
-    axios.post(`/api/users/${userId}/playlist`, payload).then(res => {
+    axios.post(`/api/user/${userId}/playlist`, payload).then(res => {
       const newPlaylist = res.data
-      const newStatePlaylist = [...this.state.ideas, newPlaylist]
+      const newStatePlaylist = [...this.state.playlist, newPlaylist]
       this.setState({ playlist: newStatePlaylist })
     })
   }
