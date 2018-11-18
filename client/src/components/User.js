@@ -14,26 +14,6 @@ class User extends Component {
     }
   };
 
-  handleChange = event => {
-    console.log("name", event.target.name);
-    console.log("value", event.target.value);
-    const updatedNewUser = { ...this.state.newUser };
-
-    // Event Target Name will be either 'name' or 'description'
-    updatedNewUser[event.target.name] = event.target.value;
-    this.setState({ newUser: updatedNewUser });
-  };
-
-  handleSubmit = event => {
-    event.preventDefault();
-
-    // Make post to our api to create new user
-    axios.post("/api/user", this.state.newUser).then(res => {
-      // when we get that data back, we need to navigate to the new users page
-
-      this.props.history.push(`/user/${res.data._id}`);
-    });
-  };
 
   getallUser = () => {
     axios.get("/api/user").then(res => {
