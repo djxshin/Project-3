@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 
+
 class UserInfo extends Component {
     state = {
         user: {},
@@ -25,7 +26,7 @@ class UserInfo extends Component {
                <h2>Instagram: {this.state.user.instagram} </h2>
                <h2>Main Streaming Service: {this.state.user.mainStreamingService} </h2>
                <h2>Streaming Service Username: {this.state.user.streamingUsername} </h2>
-               
+              
             </div>
         );
     }

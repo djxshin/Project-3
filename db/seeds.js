@@ -6,20 +6,20 @@ const KevinPL = new Playlist({
     playlistName: 'iloveGainsville',
     image: 'https://www.gainesville.org/images/logo-small-001.png',
     track1: "Numb, by Linkin-Park",
-    Track2: "Notorius Thugs by Bone-Thugs",
-    Track3: "So fresh, So Clean by Outkast",
-    Track4: "It was a Good Day by Ice Cube",
-    Track5: "Ambitionz Az a Ridah by Tupac "
+    track2: "Notorius Thugs by Bone-Thugs",
+    track3: "Sotfresh, So Clean by Outkast",
+    track4: "Ittwas a Good Day by Ice Cube",
+    track5: "Amtitionz Az a Ridah by Tupac "
 })
 
 const DJPL = new Playlist({
     playlistName: 'threeStacktheGoat',
     image: 'http://atlantablackstar.com/wp-content/uploads/2017/10/Andre-3000.png',
     track1: "Prototype, by Andre3000",
-    Track2: "Jukebox Joints, by ASAP Rocky",
-    Track3: "Motion, by Khalid",
-    Track4: "Summertime Magic, Childish Gambino ",
-    Track5: "Only You, by Theophilus London"
+    track2: "Jukebox Joints, by ASAP Rocky",
+    track3: "Motion, by Khalid",
+    track4: "Summertime Magic, Childish Gambino ",
+    track5: "Only You, by Theophilus London"
 })
 
 const DJ = new User({
