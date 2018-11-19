@@ -124,16 +124,16 @@ class Playlist extends Component {
                <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track1}`}>favorite track1: {playlist.track1}</a>
                </div>
                <div>
-               <a href={`https://www.youtube.com/results?search_query=${playlist.track2}`}>favorite track2: {playlist.track2}</a>
+               <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track2}`}>favorite track2: {playlist.track2}</a>
                </div>
                <div>
-               <a href={`https://www.youtube.com/results?search_query=${playlist.track3}`}>favorite track3: {playlist.track3}</a>
+               <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track3}`}>favorite track3: {playlist.track3}</a>
                </div>
                <div>
-               <a href={`https://www.youtube.com/results?search_query=${playlist.track4}`}>favorite track4: {playlist.track4}</a>
+               <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track4}`}>favorite track4: {playlist.track4}</a>
                </div>
                <div>
-               <a href={`https://www.youtube.com/results?search_query=${playlist.track5}`}>favorite track5: {playlist.track5}</a>
+               <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track5}`}>favorite track5: {playlist.track5}</a>
                </div>
        
               
