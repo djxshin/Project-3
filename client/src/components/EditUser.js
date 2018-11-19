@@ -5,6 +5,7 @@ import axios from "axios";
 class EditUser extends Component {
   state = {
     users: [],
+    user:"",
     newUser: {
       username: "",
       image: "",
@@ -58,6 +59,7 @@ class EditUser extends Component {
               value={this.state.newUser.username}
               type="text"
               name="username"
+              placeholder={this.state.user.username}
               
             />
           </div>
@@ -68,6 +70,7 @@ class EditUser extends Component {
               value={this.state.newUser.image}
               type="text"
               name="image"
+              placeholder={this.state.user.image}
             />
           </div>
           <div>
@@ -77,6 +80,7 @@ class EditUser extends Component {
               value={this.state.newUser.instagram}
               type="text"
               name="instagram"
+              placeholder={this.state.user.instagram}
             />
           </div>
           <div>
@@ -88,6 +92,7 @@ class EditUser extends Component {
               value={this.state.newUser.mainStreamingService}
               type="text"
               name="mainStreamingService"
+              placeholder={this.state.user.mainStreamingService}
             />
           </div>
           <div>
@@ -99,6 +104,7 @@ class EditUser extends Component {
               value={this.state.newUser.streamingUsername}
               type="text"
               name="streamingUsername"
+              placeholder={this.state.user.streamingUsername}
             />
           </div>
           <button type="submit">Submit</button>

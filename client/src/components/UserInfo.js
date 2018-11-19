@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 
 class UserInfo extends Component {
     state = {
@@ -39,7 +39,7 @@ class UserInfo extends Component {
                 <button onClick={this.handleDelete.bind(this)}>Delete User</button>
                 </div>
               <div>
-              <button >EDIT User</button>
+              <button><Link to={`/user/${this.props.match.params.userId}/edit`}>Edit</Link></button>
               </div>
             </div>
         );
