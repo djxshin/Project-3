@@ -7,6 +7,7 @@ import { createGlobalStyle } from 'styled-components'
 import Homepage from './components/Homepage';
 import Create from './components/Create';
 import Playlist from './components/Playlist';
+import EditUser from './components/EditUser';
 
 
 const Global = createGlobalStyle`
@@ -31,6 +32,7 @@ class App extends Component {
             <Route exact path="/user" component={User}/>
             <Route exact path="/user/create" component={Create}/>
             <Route exact path="/user/:userId" component={UserInfo}/>
+            <Route exact path="/user/:userId/edit" component={EditUser}/>
             <Route exact path="/user/:userId/playlist" component={Playlist}/>
             <Route  path="/" component={Homepage}/>
           </Switch>

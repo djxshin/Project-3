@@ -38,6 +38,9 @@ class UserInfo extends Component {
                 <div>
                 <button onClick={this.handleDelete.bind(this)}>Delete User</button>
                 </div>
+              <div>
+              <button >EDIT User</button>
+              </div>
             </div>
         );
     }
