@@ -103,9 +103,8 @@ class Playlist extends Component {
     return (
       <div>
         <h1>{this.state.user.username}'s Playlists</h1>
-        <NewIdeaButton onClick={this.handleCreateNewPlaylist}>
-          New Idea
-        </NewIdeaButton>
+        <NewIdeaButton onClick={this.handleCreateNewPlaylist}>Create New Playlist</NewIdeaButton>
+        
         <IdeasContainerStyle>
           {this.state.playlist.map(playlist => {
             const deletePlaylist = () => {
@@ -114,26 +113,28 @@ class Playlist extends Component {
 
             return (
                 <div>
+             
+             
                <h3> <img src={playlist.image} alt=""/></h3>
                <h3>Playlist: {playlist.playlistName} </h3>
-               <h4> favorite track1:  {playlist.track1}</h4>
-               <h4> favorite track2: {playlist.track2}</h4>
-               <h4> favorite track3: {playlist.track3}</h4>
-               <h4> favorite track4: {playlist.track4}</h4>
-               <h4> favorite track5: {playlist.track5}</h4>
-                <input 
-            onChange={(event) => this.handleChange(event, playlist._id)} 
-                  type="text" name="playlistName" 
-                  value={playlist.playlistName} 
-                />
-                <textarea 
-                  onBlur={() => this.handleUpdate(playlist._id)}
-                  onChange={(event) => this.handleChange(event, playlist._id)} 
-                  name="image" 
-                  value={playlist.image} 
-                />
+               <div>
+               <a href={`https://www.youtube.com/results?search_query=${playlist.track1}`}>favorite track1: {playlist.track1}</a>
+               </div>
+               <div>
+               <a href={`https://www.youtube.com/results?search_query=${playlist.track2}`}>favorite track2: {playlist.track2}</a>
+               </div>
+               <div>
+               <a href={`https://www.youtube.com/results?search_query=${playlist.track3}`}>favorite track3: {playlist.track3}</a>
+               </div>
+               <div>
+               <a href={`https://www.youtube.com/results?search_query=${playlist.track4}`}>favorite track4: {playlist.track4}</a>
+               </div>
+               <div>
+               <a href={`https://www.youtube.com/results?search_query=${playlist.track5}`}>favorite track5: {playlist.track5}</a>
+               </div>
+       
               
-                <button onClick={deletePlaylist}>X</button>
+                <NewIdeaButton onClick={deletePlaylist}>Delete This Playlist</NewIdeaButton>
                 </div>
             )
           })}
