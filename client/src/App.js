@@ -8,6 +8,7 @@ import Homepage from './components/Homepage';
 import Create from './components/Create';
 import Playlist from './components/Playlist';
 import EditUser from './components/EditUser';
+import CreatePlaylist from './components/CreatePlaylist';
 
 
 const Global = createGlobalStyle`
@@ -34,6 +35,7 @@ class App extends Component {
             <Route exact path="/user/:userId" component={UserInfo}/>
             <Route exact path="/user/:userId/edit" component={EditUser}/>
             <Route exact path="/user/:userId/playlist" component={Playlist}/>
+            <Route exact path="/user/:userId/playlist/create" component={CreatePlaylist}/>
             <Route  path="/" component={Homepage}/>
           </Switch>
         </div>

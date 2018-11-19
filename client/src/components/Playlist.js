@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
-
 
 // Need info about a user
 // Need info about that users ideas
@@ -106,7 +103,7 @@ class Playlist extends Component {
     return (
       <div>
         <h1>{this.state.user.username}'s Playlists</h1>
-        <NewIdeaButton onClick={this.handleCreateNewPlaylist}>Create New Playlist</NewIdeaButton>
+        <NewIdeaButton><Link to={`/user/${this.props.match.params.userId}/playlist/create`}>Playlist</Link></NewIdeaButton>
         
         <IdeasContainerStyle>
           {this.state.playlist.map(playlist => {
