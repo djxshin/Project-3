@@ -5,34 +5,7 @@ import styled from 'styled-components'
 // Need info about a user
 // Need info about that users ideas
 
-const IdeaStyles = styled.div`
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 200px;
-  height: 200px;
-  background: #f1faee;
-  margin: 10px 0;
-  button {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-  }
 
-  input,
-  textarea {
-    background-color: transparent;
-    border: none;
-  }
-
-  input {
-    height: 30%;
-    font-size: 1.3rem;
-  }
-  textarea {
-    height: 70%;
-  }
-`
 
 const NewIdeaButton = styled.button`
   background: #1d3557;

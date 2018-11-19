@@ -14,7 +14,7 @@ class User extends Component {
     }
   };
 
-                                                                        
+
   getallUser = () => {
     axios.get("/api/user").then(res => {
       console.log(res.data);
@@ -31,6 +31,7 @@ class User extends Component {
       <div>
         <h3>USERS</h3>
         {this.state.users.map(user => (
+        
           <div key={user._id}>
             <Link to={`/user/${user._id}`}>
               {user.username} <br />

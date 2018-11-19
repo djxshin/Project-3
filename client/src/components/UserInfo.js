@@ -18,18 +18,12 @@ class UserInfo extends Component {
         })
       }
 
-      handleDelete = userId => {
-        // some unique value
-        axios.delete(`/api/user/${userId}`).then(() => {
-          //Remove the user with userID from this.state.user
-          const newUser = [...this.state.user]
-          // Return only user that are NOT the id provided
-          const filtered = newUser.filter(user => {
-            return user._id !== userId // ! = =
-          })
-          // Take filtered data and set it to ideas
-          this.setState({user: filtered})
-        })
+      handleDelete(){
+        let userId =this.state.user._id;
+        axios.delete(`/api/user/${userId}`).then(response => {
+          this.props.history.push('/');
+          
+        }).catch(err => console.log(err));
       }
 
     render() {
@@ -42,7 +36,7 @@ class UserInfo extends Component {
                <h2>Main Streaming Service: {this.state.user.mainStreamingService} </h2>
                <h2>Streaming Service Username: {this.state.user.streamingUsername} </h2>
                 <div>
-                <button >Delete User</button>
+                <button onClick={this.handleDelete.bind(this)}>Delete User</button>
                 </div>
             </div>
         );
