@@ -118,7 +118,7 @@ class Playlist extends Component {
                <h3> <img src={playlist.image} alt=""/></h3>
                <h3>Playlist: {playlist.playlistName} </h3>
                <div>
-               <a href={`https://www.youtube.com/results?search_query=${playlist.track1}`}>favorite track1: {playlist.track1}</a>
+               <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track1}`}>favorite track1: {playlist.track1}</a>
                </div>
                <div>
                <a href={`https://www.youtube.com/results?search_query=${playlist.track2}`}>favorite track2: {playlist.track2}</a>
