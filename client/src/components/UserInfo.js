@@ -40,6 +40,7 @@ class UserInfo extends Component {
                 </div>
               <div>
               <button><Link to={`/user/${this.props.match.params.userId}/edit`}>Edit</Link></button>
+              <button><Link to={`/user/${this.props.match.params.userId}/playlist`}>Playlist</Link></button>
               </div>
             </div>
         );
