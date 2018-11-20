@@ -59,6 +59,7 @@ class Create extends Component {
               value={this.state.newUser.username}
               type="text"
               name="username"
+              placeholder="username"
             />
           </div>
           <div>
@@ -68,6 +69,7 @@ class Create extends Component {
               value={this.state.newUser.image}
               type="text"
               name="image"
+              placeholder="URL for image"
             />
           </div>
           <div>
@@ -77,6 +79,7 @@ class Create extends Component {
               value={this.state.newUser.instagram}
               type="text"
               name="instagram"
+              placeholder="instagram handle"
             />
           </div>
           <div>
@@ -88,6 +91,7 @@ class Create extends Component {
               value={this.state.newUser.mainStreamingService}
               type="text"
               name="mainStreamingService"
+              placeholder="streaming service"
             />
           </div>
           <div>
@@ -99,6 +103,7 @@ class Create extends Component {
               value={this.state.newUser.streamingUsername}
               type="text"
               name="streamingUsername"
+              placeholder="streaming username"
             />
           </div>
           <button type="submit">Submit</button>

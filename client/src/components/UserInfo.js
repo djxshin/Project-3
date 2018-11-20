@@ -21,7 +21,7 @@ class UserInfo extends Component {
       handleDelete(){
         let userId =this.state.user._id;
         axios.delete(`/api/user/${userId}`).then(response => {
-          this.props.history.push('/');
+          this.props.history.push('/user');
           
         }).catch(err => console.log(err));
       }
@@ -31,9 +31,9 @@ class UserInfo extends Component {
             <div>
               <div>
               <br/>
-              <button><Link to={`/user/${this.props.match.params.userId}/edit`}>Edit User Profile</Link></button>
+              <button><Link to={`/user/${this.props.match.params.userId}/edit`}>Edit Profile</Link></button>
               <br/>
-              <button><Link to={`/user/${this.props.match.params.userId}/playlist`}>Playlist</Link></button>
+              <button><Link to={`/user/${this.props.match.params.userId}/playlist`}>View {this.state.user.username}'s Playlist</Link></button>
               <br/>
               </div>
                <h1>Username: {this.state.user.username} </h1>
@@ -41,8 +41,8 @@ class UserInfo extends Component {
                <h2>Instagram: {this.state.user.instagram} </h2>
                <h2>Main Streaming Service: {this.state.user.mainStreamingService} </h2>
                <h2>Streaming Service Username: {this.state.user.streamingUsername} </h2>
-               
-               <button onClick={this.handleDelete.bind(this)}>Delete User</button>
+
+               <button onClick={this.handleDelete.bind(this)}>Delete {this.state.user.username} </button>
             
             </div>
         );

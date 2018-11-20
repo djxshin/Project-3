@@ -64,6 +64,7 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.playlistName}
               type="text"
               name="playlistName"
+              placeholder="enter name for playlist"
             />
           </div>
           <div>
@@ -73,6 +74,7 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.image}
               type="text"
               name="image"
+              placeholder="insert url image link"
             />
           </div>
           <div>
@@ -82,6 +84,7 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.track1}
               type="text"
               name="track1"
+              placeholder=" track, by artist"
             />
           </div>
           <div>
@@ -91,6 +94,7 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.track2}
               type="text"
               name="track2"
+              placeholder=" track, by artist"
             />
           </div>
           <div>
@@ -100,6 +104,7 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.track3}
               type="text"
               name="track3"
+              placeholder=" track, by artist"
             />
           </div>
           <div>
@@ -109,6 +114,7 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.track4}
               type="text"
               name="track4"
+              placeholder=" track, by artist"
             />
           </div>
           <div>
@@ -118,6 +124,7 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.track5}
               type="text"
               name="track5"
+              placeholder=" track, by artist"
             />
           </div>
           <button type="submit">Submit</button>
