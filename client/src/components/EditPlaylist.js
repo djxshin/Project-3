@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import axios from "axios";
 
 
-class CreatePlaylist extends Component {
+class EditPlaylist extends Component {
   state = {
+      user: {},
     playlists: [],
+    playlist:"",
     newPlaylist: {
         playlistName: "",
         image: "",
@@ -15,6 +17,17 @@ class CreatePlaylist extends Component {
         track5: ""
     }
   };
+
+  componentDidMount() {
+    // make an api call to get one single user
+    // On the server URL is '/api/playlists/:userId'
+    const playlistId = this.props.match.params.playlistId
+  
+    axios.get(`/api/playlist/${playlistId}`).then(res => {
+      console.log(res.data)
+      this.setState({ playlist: res.data})
+    })
+  }
 
   handleChange = event => {
     console.log("name", event.target.name);
@@ -29,42 +42,30 @@ class CreatePlaylist extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    // Make post to our api to create new user
-   const userId = this.props.match.params.userId
-    axios.post(`/api/user/${userId}/playlist`, this.state.newPlaylist).then(res => {
-      // when we get that data back, we need to navigate to the new users page
-        console.log(res.data)
-       
-      this.props.history.push(`/user/${userId}/playlist`);
+    const playlistId = this.props.match.params.playlistId
+    axios.patch(`/api/playlist/${playlistId}`, this.state.newPlaylist).then(res => {
+      // when we get that data back, we need to navigate to the new playlists page
+      const userId = this.props.match.params.userId
+      
+      this.props.history.push(`/user`);
     });
   };
-
-  getallPlaylist = () => {
-    const userId = this.props.match.params.userId
-    axios.get(`/api/user/${userId}/playlist`).then(res => {
-      console.log(res.data);
-      this.setState({ playlists: res.data });
-    });
-  };
-
-  componentDidMount() {
-    this.getallPlaylist();
-  }
 
   render() {
     return (
       <div>
         
-        <h3>Create a New User</h3>
+        <h3>Edit User</h3>
         <form onSubmit={this.handleSubmit}>
           <div>
-            <label htmlFor="playlistName">Playlist: </label>
+            <label htmlFor="name">Playlist Name: </label>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.playlistName}
               type="text"
               name="playlistName"
-              placeholder="enter name for playlist"
+          
+              
             />
           </div>
           <div>
@@ -74,57 +75,65 @@ class CreatePlaylist extends Component {
               value={this.state.newPlaylist.image}
               type="text"
               name="image"
-              placeholder="URL image link"
+            
             />
           </div>
           <div>
-            <label htmlFor="track1">Favorite Track1: </label>
+            <label htmlFor="track1">Track1: </label>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track1}
               type="text"
               name="track1"
-              placeholder=" track, by artist"
+             
             />
           </div>
           <div>
-            <label htmlFor="track2">Favorite Track2: </label>
+            <label htmlFor="track2">
+            Track2:{" "}
+            </label>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track2}
               type="text"
               name="track2"
-              placeholder=" track, by artist"
+              
             />
           </div>
           <div>
-            <label htmlFor="track3">Favorite Track3: </label>
+            <label htmlFor="track3">
+            Track3:{" "}
+            </label>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track3}
               type="text"
               name="track3"
-              placeholder=" track, by artist"
+              
             />
           </div>
           <div>
-            <label htmlFor="track4">Favorite Track4: </label>
+            <label htmlFor="track4">
+            Track4:{" "}
+            </label>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track4}
               type="text"
               name="track4"
-              placeholder=" track, by artist"
+          
             />
           </div>
           <div>
-            <label htmlFor="track5">Favorite Track5: </label>
+            <label htmlFor="track5">
+            Track5:{" "}
+            </label>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track5}
               type="text"
               name="track5"
-              placeholder=" track, by artist"
+             
             />
           </div>
           <button type="submit">Submit</button>
@@ -135,4 +144,4 @@ class CreatePlaylist extends Component {
   }
 }
 
-export default CreatePlaylist;
+export default EditPlaylist;

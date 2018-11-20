@@ -106,13 +106,13 @@ class Playlist extends Component {
         <NewIdeaButton><Link to={`/user/${this.props.match.params.userId}/playlist/create`}>Create Playlist</Link></NewIdeaButton>
         
         <IdeasContainerStyle>
-          {this.state.playlist.map(playlist => {
+          {this.state.playlist.map((playlist, i) => {
             const deletePlaylist = () => {
               return this.handleDelete(playlist._id)
             }
 
             return (
-                <div>
+                <div key={i}>
              
              
                <h3> <img src={playlist.image} alt=""/></h3>
@@ -135,6 +135,7 @@ class Playlist extends Component {
        
               
                 <NewIdeaButton onClick={deletePlaylist}>Delete This Playlist</NewIdeaButton>
+                <Link to={`/playlist/${playlist._id}`}>Edit This Playlist</Link>
                 </div>
             )
           })}

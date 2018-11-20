@@ -9,6 +9,7 @@ import Create from './components/Create';
 import Playlist from './components/Playlist';
 import EditUser from './components/EditUser';
 import CreatePlaylist from './components/CreatePlaylist';
+import EditPlaylist from './components/EditPlaylist';
 
 
 const Global = createGlobalStyle`
@@ -28,7 +29,7 @@ class App extends Component {
         <div>
         <Global />
           <NavBar />
-          
+         
           <Switch>
             <Route exact path="/user" component={User}/>
             <Route exact path="/user/create" component={Create}/>
@@ -36,6 +37,7 @@ class App extends Component {
             <Route exact path="/user/:userId/edit" component={EditUser}/>
             <Route exact path="/user/:userId/playlist" component={Playlist}/>
             <Route exact path="/user/:userId/playlist/create" component={CreatePlaylist}/>
+            <Route exact path="/playlist/:playlistId" component={EditPlaylist}/>
             <Route  path="/" component={Homepage}/>
           </Switch>
         </div>

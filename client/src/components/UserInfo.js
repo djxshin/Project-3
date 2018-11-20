@@ -30,20 +30,21 @@ class UserInfo extends Component {
         return (
             <div>
               <div>
-              <br/>
+              <div>
               <button><Link to={`/user/${this.props.match.params.userId}/edit`}>Edit Profile</Link></button>
-              <br/>
+              </div>
+              <div>
               <button><Link to={`/user/${this.props.match.params.userId}/playlist`}>View {this.state.user.username}'s Playlist</Link></button>
-              <br/>
+              </div>
               </div>
                <h1>Username: {this.state.user.username} </h1>
                <h2><img src={this.state.user.image} alt=""/></h2>
                <h2>Instagram: {this.state.user.instagram} </h2>
                <h2>Main Streaming Service: {this.state.user.mainStreamingService} </h2>
                <h2>Streaming Service Username: {this.state.user.streamingUsername} </h2>
-
+              <div>
                <button onClick={this.handleDelete.bind(this)}>Delete {this.state.user.username} </button>
-            
+               </div>
             </div>
         );
     }
