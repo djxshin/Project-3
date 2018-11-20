@@ -29,19 +29,21 @@ class UserInfo extends Component {
     render() {
         return (
             <div>
-                
+              <div>
+              <br/>
+              <button><Link to={`/user/${this.props.match.params.userId}/edit`}>Edit User Profile</Link></button>
+              <br/>
+              <button><Link to={`/user/${this.props.match.params.userId}/playlist`}>Playlist</Link></button>
+              <br/>
+              </div>
                <h1>Username: {this.state.user.username} </h1>
                <h2><img src={this.state.user.image} alt=""/></h2>
                <h2>Instagram: {this.state.user.instagram} </h2>
                <h2>Main Streaming Service: {this.state.user.mainStreamingService} </h2>
                <h2>Streaming Service Username: {this.state.user.streamingUsername} </h2>
-                <div>
-                <button onClick={this.handleDelete.bind(this)}>Delete User</button>
-                </div>
-              <div>
-              <button><Link to={`/user/${this.props.match.params.userId}/edit`}>Edit</Link></button>
-              <button><Link to={`/user/${this.props.match.params.userId}/playlist`}>Playlist</Link></button>
-              </div>
+               
+               <button onClick={this.handleDelete.bind(this)}>Delete User</button>
+            
             </div>
         );
     }

@@ -103,7 +103,7 @@ class Playlist extends Component {
     return (
       <div>
         <h1>{this.state.user.username}'s Playlists</h1>
-        <NewIdeaButton><Link to={`/user/${this.props.match.params.userId}/playlist/create`}>Playlist</Link></NewIdeaButton>
+        <NewIdeaButton><Link to={`/user/${this.props.match.params.userId}/playlist/create`}>Create Playlist</Link></NewIdeaButton>
         
         <IdeasContainerStyle>
           {this.state.playlist.map(playlist => {
