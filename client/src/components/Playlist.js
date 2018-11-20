@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 const NewIdeaButton = styled.button`
   background: #1d3557;
   color: white;
-  font-size: 1.3rem;
+  font-size: 20px;
   padding: 7.5px 5px;
 `
 
@@ -135,7 +135,7 @@ class Playlist extends Component {
        
               
                 <NewIdeaButton onClick={deletePlaylist}>Delete This Playlist</NewIdeaButton>
-                <Link to={`/playlist/${playlist._id}`}>Edit This Playlist</Link>
+                <NewIdeaButton><Link to={`/playlist/${playlist._id}`}>Edit This Playlist</Link></NewIdeaButton>
                 </div>
             )
           })}
