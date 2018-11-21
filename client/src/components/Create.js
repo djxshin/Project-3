@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import axios from "axios";
 
 
+
+
+
 class Create extends Component {
   state = {
     users: [],
@@ -49,66 +52,85 @@ class Create extends Component {
   render() {
     return (
       <div>
+        <h3 className="headerC">Create a New User</h3>
+      <div className="formC">
         
-        <h3>Create a New User</h3>
+       
         <form onSubmit={this.handleSubmit}>
           <div>
+            <div>
             <label htmlFor="name">Username: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.username}
               type="text"
               name="username"
-              placeholder="username"
+          
             />
           </div>
           <div>
+            <div>
             <label htmlFor="image">User Image: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.image}
               type="text"
               name="image"
-              placeholder="URL for image"
+             
             />
           </div>
           <div>
+          <div>
+            <div>
             <label htmlFor="instagram">Instagram: </label>
+            </div>
+          </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.instagram}
               type="text"
               name="instagram"
-              placeholder="instagram handle"
+             
             />
           </div>
           <div>
+            <div>
             <label htmlFor="mainStreamingService">
               Main Streaming Service:{" "}
             </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.mainStreamingService}
               type="text"
               name="mainStreamingService"
-              placeholder="streaming service"
+              
             />
           </div>
           <div>
+            <div>
             <label htmlFor="streamingUsername">
               Streaming Service Username:{" "}
             </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.streamingUsername}
               type="text"
               name="streamingUsername"
-              placeholder="streaming username"
+            
             />
           </div>
-          <button type="submit">Submit</button>
+          
+          <button type="submit" className="buttC">Submit</button>
+         
         </form>
+
+
        
+      </div>
       </div>
     );
   }

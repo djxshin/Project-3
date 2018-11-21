@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom'
 
 
 
-const NewIdeaButton = styled.button`
+const Button = styled.button`
   background: #1d3557;
   color: white;
-  font-size: 20px;
-  padding: 7.5px 5px;
+  font-size: 15px;
+  padding: 5px;
 `
 
-const IdeasContainerStyle = styled.div`
+const Style = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -102,10 +102,16 @@ class Playlist extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.user.username}'s Playlists</h1>
-        <NewIdeaButton><Link to={`/user/${this.props.match.params.userId}/playlist/create`}>Create Playlist</Link></NewIdeaButton>
+        <h1 className="PLN">{this.state.user.username}'s Playlists</h1>
+
+        <Link to={`/user/${this.props.match.params.userId}/playlist/create`} >
+        <div className="LinkP">
+        Create New Playlist
+        </div>
         
-        <IdeasContainerStyle>
+      </Link>
+        
+        <div className="playlistBOX">
           {this.state.playlist.map((playlist, i) => {
             const deletePlaylist = () => {
               return this.handleDelete(playlist._id)
@@ -113,10 +119,12 @@ class Playlist extends Component {
 
             return (
                 <div key={i}>
-             
-             
-               <h3> <img src={playlist.image} alt=""/></h3>
-               <h3>Playlist: {playlist.playlistName} </h3>
+              
+                <div className="flexpic">
+               <img src={playlist.image} className="picPro2" alt=""/>
+               </div>
+               <div className="contentFlex">
+               <h3 className="PLN">Playlist: {playlist.playlistName} </h3>
                <div>
                <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track1}`}>favorite track1: {playlist.track1}</a>
                </div>
@@ -132,14 +140,16 @@ class Playlist extends Component {
                <div>
                <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track5}`}>favorite track5: {playlist.track5}</a>
                </div>
-       
-              
-                <NewIdeaButton onClick={deletePlaylist}>Delete This Playlist</NewIdeaButton>
-                <NewIdeaButton><Link to={`/playlist/${playlist._id}`}>Edit This Playlist</Link></NewIdeaButton>
+               </div>
+                <div className="buttonPL">
+                <Button onClick={deletePlaylist}>Delete</Button>
+                <Button><Link to={`/playlist/${playlist._id}`}>EDIT</Link></Button>
+               
+                </div>
                 </div>
             )
           })}
-        </IdeasContainerStyle>
+      </div>
       </div>
     )
   }

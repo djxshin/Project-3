@@ -55,10 +55,13 @@ class EditPlaylist extends Component {
     return (
       <div>
         
-        <h3>Edit User</h3>
+        <h3 className="headerPE">Edit Playlist</h3>
+        <div className="formPE" >
         <form onSubmit={this.handleSubmit}>
           <div>
+            <div>
             <label htmlFor="name">Playlist Name: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.playlistName}
@@ -69,7 +72,9 @@ class EditPlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="image">Playlist Image: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.image}
@@ -79,7 +84,9 @@ class EditPlaylist extends Component {
             />
           </div>
           <div>
+            <div>
             <label htmlFor="track1">Track1: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track1}
@@ -89,9 +96,11 @@ class EditPlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track2">
             Track2:{" "}
             </label>
+          </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track2}
@@ -101,9 +110,11 @@ class EditPlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track3">
             Track3:{" "}
             </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track3}
@@ -113,9 +124,11 @@ class EditPlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track4">
             Track4:{" "}
             </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track4}
@@ -125,9 +138,11 @@ class EditPlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track5">
             Track5:{" "}
             </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track5}
@@ -136,9 +151,9 @@ class EditPlaylist extends Component {
              
             />
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" className="buttPE">Submit</button>
         </form>
-       
+        </div>
       </div>
     );
   }

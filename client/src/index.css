@@ -1,0 +1,211 @@
+.pic{
+    border:solid;
+    width: 200px;
+    height:200px;
+    opacity:.3;
+}
+
+.pic:hover{
+    opacity:1;
+    width:250px;
+    height:250px;
+
+}
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right:100px;
+    justify-content: space-evenly;
+}
+
+.username{
+    text-align: center;
+}
+
+.header{
+    border:solid;
+    height:200px;
+    background-image: url(http://wersm.com/wp-content/uploads/2013/07/users.jpg);
+    background-size: 80% 90%;
+   
+    background-position: center;
+   
+    background-repeat: no-repeat;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    
+}   
+.h1{
+    border:solid;
+    background-color:white;
+    
+}
+
+    /* End of user page********************************* */
+
+
+
+
+
+
+
+    /* *********** USER INFO ***********************************/
+
+.infoDetail{
+    border:solid;
+    margin-left: 200px;
+    margin-right:200px;
+    margin-top:50px;
+   
+}
+.profileI{
+    display:flex;
+    justify-content: center;
+    padding-top: 5px;
+   
+}
+.info{
+    margin-left:257px;
+    padding-top: 5px;
+}
+.picPro{
+    max-width:200px;
+    max-height:200px;
+    border:solid;
+}
+
+.header1{
+    border:solid;
+    height:200px;
+    background-image: url(https://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_471819/Image/My%20Images/News%20Items/information-about-us_0.jpg);
+    background-size: 50% 60%;
+   
+    background-position: center;
+   
+    background-repeat: no-repeat;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+  
+    
+}  
+.page{
+    background-color: khaki;
+}
+
+    /* **************************** create USER*/
+
+.formC{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:solid;
+    height:500px;
+    background-color: khaki
+}
+.headerC{
+    text-align: center;
+    border:solid;
+}
+.buttC{
+   margin-top: 10px;
+   width:100px;
+
+
+   /* ****************************** EDIT PROFILE */
+
+
+}
+.formE{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:solid;
+    height:500px;
+    background-color: khaki
+}
+.headerE{
+    text-align: center;
+    border:solid;
+}
+.buttE{
+   margin-top: 10px;
+   width:100px;
+}
+
+  /* ***********EDIT PLAYLIST ***********************************/
+
+.formPE{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:solid;
+    height:500px;
+    background-color: khaki
+}
+.headerPE{
+    text-align: center;
+    border:solid;
+}
+.buttPE{
+   margin-top: 10px;
+   width:100px;
+}
+
+/* *************************** Create PLAYLIST */
+.formPC{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:solid;
+    height:500px;
+    background-color: khaki
+}
+.headerPC{
+    text-align: center;
+    border:solid;
+}
+.buttPC{
+   margin-top: 10px;
+   width:100px;
+}
+
+/* ******************************* PLAYLIST */
+.playlistBOX{
+    border:solid;
+    width:500px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.flexpic{
+    display:flex;
+    justify-content: center;
+}
+.picPro2{
+    max-width:150px;
+    max-height:150px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border:solid;
+}
+.buttonPL{
+    display:flex;
+    justify-content: space-evenly;
+    margin:5px;
+}
+.contentFlex{
+    margin:10px;
+}
+.PLN{
+    text-align: center;
+    border:solid;
+}
+.LinkP{
+    border:solid;
+    text-align: center;
+    background-color: chartreuse;
+    color:red;
+    font:20px;
+}

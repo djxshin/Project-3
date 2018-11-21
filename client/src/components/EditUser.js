@@ -49,67 +49,79 @@ class EditUser extends Component {
   render() {
     return (
       <div>
-        
-        <h3>Edit User</h3>
+      
+        <h3 className="headerC">Edit User</h3>
+        <div className="formE">
         <form onSubmit={this.handleSubmit}>
           <div>
+            <div>
             <label htmlFor="name">Username: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.username}
               type="text"
               name="username"
-              placeholder={this.state.user.username}
+           
               
             />
           </div>
           <div>
+            <div>
             <label htmlFor="image">User Image: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.image}
               type="text"
               name="image"
-              placeholder={this.state.user.image}
+             
             />
           </div>
           <div>
+          <div>
             <label htmlFor="instagram">Instagram: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.instagram}
               type="text"
               name="instagram"
-              placeholder={this.state.user.instagram}
+             
             />
           </div>
           <div>
+          <div>
             <label htmlFor="mainStreamingService">
+         
               Main Streaming Service:{" "}
             </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.mainStreamingService}
               type="text"
               name="mainStreamingService"
-              placeholder={this.state.user.mainStreamingService}
+              
             />
           </div>
+          <div>
           <div>
             <label htmlFor="streamingUsername">
               Streaming Service Username:{" "}
             </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newUser.streamingUsername}
               type="text"
               name="streamingUsername"
-              placeholder={this.state.user.streamingUsername}
+           
             />
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" className="buttE">Submit</button>
         </form>
-       
+        </div>
       </div>
     );
   }

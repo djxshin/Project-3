@@ -55,10 +55,13 @@ class CreatePlaylist extends Component {
     return (
       <div>
         
-        <h3>Create a New User</h3>
+        <h3 className="headerPC">Create a Playlist</h3>
+        <div className="formPC">
         <form onSubmit={this.handleSubmit}>
           <div>
+            <div>
             <label htmlFor="playlistName">Playlist: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.playlistName}
@@ -68,7 +71,9 @@ class CreatePlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="image">Playlist Image: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.image}
@@ -78,7 +83,9 @@ class CreatePlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track1">Favorite Track1: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track1}
@@ -88,7 +95,9 @@ class CreatePlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track2">Favorite Track2: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track2}
@@ -98,7 +107,9 @@ class CreatePlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track3">Favorite Track3: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track3}
@@ -108,7 +119,9 @@ class CreatePlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track4">Favorite Track4: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track4}
@@ -118,7 +131,9 @@ class CreatePlaylist extends Component {
             />
           </div>
           <div>
+          <div>
             <label htmlFor="track5">Favorite Track5: </label>
+            </div>
             <input
               onChange={this.handleChange}
               value={this.state.newPlaylist.track5}
@@ -127,9 +142,9 @@ class CreatePlaylist extends Component {
               placeholder=" track, by artist"
             />
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" className="buttPC">Submit</button>
         </form>
-       
+      </div>
       </div>
     );
   }

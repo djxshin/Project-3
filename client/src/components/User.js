@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import '../index.css'
 class User extends Component {
   state = {
     users: [],
@@ -28,18 +28,30 @@ class User extends Component {
 
   render() {
     return (
-      <div>
-        <h3>USERS</h3>
+      <div className="wrapper">
+        
+        <div className="header">
+        <h1 className="h1">
+        USERS PAGE
+        </h1>
+        </div>
+        <div className="flex">
         {this.state.users.map(user => (
           <div key={user._id}>
-            <Link to={`/user/${user._id}`}>
+
+            <Link to={`/user/${user._id}`} className="link">
+            <div className="username">
               {user.username} <br />
-              <img src={user.image} alt="" />
+            </div>
+            <div className="profilePic">
+              <img src={user.image} className="pic" alt="" />
+            </div>
             </Link>
+            
           </div>
         ))}
 
-       
+       </div>
       </div>
     );
   }

@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import {Card, CardTitle} from 'react-materialize'
 
 const NavBarStyles = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color:aqua;
+  background-color: aqua;
   height: 50px;
 
   a {
@@ -47,31 +48,37 @@ class UserInfo extends Component {
 
   render() {
     return (
-      <div>
+      <div className="page">
         <NavBarStyles id="nav-container" className="some-class">
-          <Link to={`/user/${this.props.match.params.userId}/edit`}>
+          <button><Link to={`/user/${this.props.match.params.userId}/edit`}>
             Edit Profile
-          </Link>
-          <Link to={`/user/${this.props.match.params.userId}/playlist`}>
+          </Link></button>
+          <button><Link to={`/user/${this.props.match.params.userId}/playlist`}>
             View {this.state.user.username}'s Playlist
-          </Link>
+          </Link></button>
           <button onClick={this.handleDelete.bind(this)}>
             Delete {this.state.user.username}{" "}
           </button>
         </NavBarStyles>
-        <div>
-          <div />
-          <div />
+        <div className="header1">
+      
         </div>
-        <h1>Username: {this.state.user.username} </h1>
-        <h2>
-          <img src={this.state.user.image} alt="" />
-        </h2>
-        <h2>Instagram: {this.state.user.instagram} </h2>
-        <h2>Main Streaming Service: {this.state.user.mainStreamingService} </h2>
-        <h2>
+    
+       <div class="infoDetail">
+        <div class="profileI">
+          <img src={this.state.user.image} alt="" className="picPro" />
+        </div>
+        <div className="info">
+        <h5>Username: {this.state.user.username}</h5>
+        <h5>Instagram: {this.state.user.instagram} </h5>
+        <h5>Main Streaming Service: {this.state.user.mainStreamingService} </h5>
+        <h5>
           Streaming Service Username: {this.state.user.streamingUsername}{" "}
-        </h2>
+        </h5>
+        </div>
+        </div>
+
+   
       </div>
     );
   }
