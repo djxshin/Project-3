@@ -11,7 +11,8 @@ https://lit-bayou-69434.herokuapp.com/user
 
 https://www.lucidchart.com/documents/edit/89e25e94-5289-4b63-87eb-ac35060437b9/0
 
-![ERD](/images/ERD.jpg)
+
+file:///Users/cb_atl_105_david_shin/Desktop/wdi/projects/project3/Images/ERD.jpg
 
 ## Trello Board
 
@@ -19,7 +20,8 @@ https://trello.com/b/3VeQ3YId/project-3-wdi-18
 
 ## Wireframes
 
-![ERD](/iamges/Project3WF.jpeg)
+file:///Users/cb_atl_105_david_shin/Desktop/wdi/projects/project3/Images/ERD.jpg
+
 
 
 ## Home Page
