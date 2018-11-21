@@ -106,25 +106,26 @@ class Playlist extends Component {
 
         <Link to={`/user/${this.props.match.params.userId}/playlist/create`} >
         <div className="LinkP">
-        Create New Playlist
+        Create NewPlaylist
         </div>
         
       </Link>
         
         <div className="playlistBOX">
-          {this.state.playlist.map((playlist, i) => {
+          {this.state.playlist.map((playlist) => {
             const deletePlaylist = () => {
               return this.handleDelete(playlist._id)
             }
 
             return (
-                <div key={i}>
+                <div >
               
                 <div className="flexpic">
                <img src={playlist.image} className="picPro2" alt=""/>
                </div>
                <div className="contentFlex">
                <h3 className="PLN">Playlist: {playlist.playlistName} </h3>
+           
                <div>
                <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track1}`}>favorite track1: {playlist.track1}</a>
                </div>
@@ -141,6 +142,7 @@ class Playlist extends Component {
                <a target="_blank" href={`https://www.youtube.com/results?search_query=${playlist.track5}`}>favorite track5: {playlist.track5}</a>
                </div>
                </div>
+               
                 <div className="buttonPL">
                 <Button onClick={deletePlaylist}>Delete</Button>
                 <Button><Link to={`/playlist/${playlist._id}`}>EDIT</Link></Button>

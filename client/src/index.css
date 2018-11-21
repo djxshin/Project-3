@@ -175,9 +175,11 @@
 /* ******************************* PLAYLIST */
 .playlistBOX{
     border:solid;
-    width:500px;
-    margin-left: 15px;
+    width:1100px;
+    margin-left: 25px;
     margin-top: 10px;
+   
+   
 }
 .flexpic{
     display:flex;
@@ -197,6 +199,7 @@
 }
 .contentFlex{
     margin:10px;
+    
 }
 .PLN{
     text-align: center;
@@ -208,4 +211,11 @@
     background-color: chartreuse;
     color:red;
     font:20px;
+}
+.flexPL{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right:100px;
+    justify-content: space-evenly;
 }
