@@ -14,6 +14,8 @@ https://www.lucidchart.com/documents/edit/89e25e94-5289-4b63-87eb-ac35060437b9/0
 
 file:///Users/cb_atl_105_david_shin/Desktop/wdi/projects/project3/Images/ERD.jpg
 
+![ERD](/images/ERD.jpg)
+
 ## Trello Board
 
 https://trello.com/b/3VeQ3YId/project-3-wdi-18
