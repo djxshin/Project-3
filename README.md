@@ -25,7 +25,7 @@ https://trello.com/b/3VeQ3YId/project-3-wdi-18
 
 file:///Users/cb_atl_105_david_shin/Desktop/wdi/projects/project3/Images/ERD.jpg
 
-![WireFrames](Images/)
+![WireFrames](Images/Project3WF.jpeg)
 
 
 ## Home Page
