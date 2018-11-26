@@ -45,7 +45,7 @@ class EditPlaylist extends Component {
     const playlistId = this.props.match.params.playlistId
     axios.patch(`/api/playlist/${playlistId}`, this.state.newPlaylist).then(res => {
       // when we get that data back, we need to navigate to the new playlists page
-      const userId = this.props.match.params.userId
+      
       
       this.props.history.push(`/user`);
     });

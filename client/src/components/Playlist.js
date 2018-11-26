@@ -14,14 +14,6 @@ const Button = styled.button`
   font-size: 15px;
   padding: 5px;
 `
-
-const Style = styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: flex-start;
-`
-
 class Playlist extends Component {
   state = {
     user: {},
