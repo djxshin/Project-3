@@ -1,44 +1,115 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project-3 PLS Play List Share
 
-## Available Scripts
 
-In the project directory, you can run:
+Project-3 WDI-18
 
-### `npm start`
+## Heroku Site
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://lit-bayou-69434.herokuapp.com/user
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## ERD
 
-### `npm test`
+https://www.lucidchart.com/documents/edit/89e25e94-5289-4b63-87eb-ac35060437b9/0
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+file:///Users/cb_atl_105_david_shin/Desktop/wdi/projects/project3/Images/ERD.jpg
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![ERD](Images/ERD.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Trello Board
 
-### `npm run eject`
+https://trello.com/b/3VeQ3YId/project-3-wdi-18
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Wireframes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+file:///Users/cb_atl_105_david_shin/Desktop/wdi/projects/project3/Images/ERD.jpg
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![WireFrames](Images/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Home Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Greetings! welcome to PLS (Play-List-Share). 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Have you ever wanted to share your playlist with your friends/family, but couldn't because of different streaming services being used between you and them? 
+
+Now you can share you're playlist that directly links your playlist to youtube.
+
+Once you create a User account and make a playlist that you'll input 5 of the your favorite tracks using a form, then those inputs from the form will be clickable links to populate a youtube search based on whatever the user has typed on the the input.
+
+Simle enough right?  Now go and share you're playlist with your loved ones.
+
+
+When a User enters the home page, then they will see the full description of the app.
+
+Nav bar will be on the home page to navigate the user through the app.
+
+    - Nav bar contains 3 links
+
+        1. Back to Homepage
+        2. Users Page (where you can browse through all the users)
+        3. Create User (link to the create new user page)
+
+## User Page
+
+When the user clicks on the individual User Link (image), then the User page will show up.
+
+The User page will have
+-NavBar
+- Link to User Info
+
+When the user is in the individual user link, then it will go to the user info page and all the playlists.
+
+## User Info
+
+when the user clicks on a specific users link, then the user will be directed to the user information page.   User information page contains each specific use's:
+
+- username
+- profile image
+-Instagram handle
+-Main Streaming Service 
+-Streaming Service Username
+
+There will also be a Edit button and a Delete button on the page to Edit the user infromation, or to completely delete the user.
+
+## Playlist
+
+When the user is on the individual user's page, and then click on that individual user's playlist, then the user will be on the playlist page. 
+
+One the user is on the playlist page of the individual user, they will see the title of the playlist and list of the tracks on the page.
+
+each individual playlists will have a Delete button that will delete that specific playlist.
+
+User will be able to create playlist as well, which you will press the create playlist button that will be specific to the User.
+
+When user will press the create new playlist button, then the user will be on the create playlist page.  Input fields will be provided on the page and users will put in the values they choose on the input field, then the user will hit the submit button.
+
+User will be able to edit each individual playlists as well.
+
+Then the user will be lead back to the user playlist page.
+
+
+
+## Technologies Used
+
+    * HTML5
+    * CSS
+    * JavaScript
+    * Node.js
+    * Express.js
+    * MongoDB.js
+    * Mongoose
+   
+
+## Future Development
+
+I would like to add more styling to the pages.
+
+Shorten the amount of pages, be able to add mutiple pages into a single component with having the ability to toggle on and off imported components.
+
+Use either apple music API or spotify API.
+
+Authentication for the log in.
+
+
