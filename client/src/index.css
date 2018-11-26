@@ -219,3 +219,10 @@
     padding-right:100px;
     justify-content: space-evenly;
 }
+
+
+/* *********************** Homepage */
+
+.greet{
+    text-align: center;
+}
