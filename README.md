@@ -1,5 +1,15 @@
 # Project-3 PLS Play List Share
 
+Greetings! welcome to PLS (Play-List-Share). 
+
+Have you ever wanted to share your playlist with your friends/family, but couldn't because of different streaming services being used between you and them? 
+
+Now you can share you're playlist that directly links your playlist to youtube.
+
+Once you create a User account and make a playlist that you'll input 5 of the your favorite tracks using a form, then those inputs from the form will be clickable links to populate a youtube search based on whatever the user has typed on the the input.
+
+Simple enough right?  Now go and share you're playlist with your loved ones.
+
 
 Project-3 WDI-18
 
@@ -29,16 +39,6 @@ file:///Users/cb_atl_105_david_shin/Desktop/wdi/projects/project3/Images/ERD.jpg
 
 
 ## Home Page
-
-Greetings! welcome to PLS (Play-List-Share). 
-
-Have you ever wanted to share your playlist with your friends/family, but couldn't because of different streaming services being used between you and them? 
-
-Now you can share you're playlist that directly links your playlist to youtube.
-
-Once you create a User account and make a playlist that you'll input 5 of the your favorite tracks using a form, then those inputs from the form will be clickable links to populate a youtube search based on whatever the user has typed on the the input.
-
-Simle enough right?  Now go and share you're playlist with your loved ones.
 
 
 When a User enters the home page, then they will see the full description of the app.
