@@ -15,7 +15,7 @@ Project-3 WDI-18
 
 ## Heroku Site
 
-https://lit-bayou-69434.herokuapp.com/user
+https://lit-bayou-69434.herokuapp.com
 
 ## ERD
 
